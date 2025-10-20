@@ -1,8 +1,8 @@
 <!-- Unit 3 Project
 Requirements
-[  ] Two External Links
-[  ] Table (minimum 2 Columns by 3 Rows)
-[  ] Three CSS Rules
+[ yes] Two External Links
+[ yes ] Table (minimum 2 Columns by 3 Rows)
+[ yes ] Three CSS Rules
 [  ] Three Images
 
 Select ONE Additional Feature to Add  
@@ -17,15 +17,41 @@ Select ONE Additional Feature to Add
 <html>
 
 <head>
-  <title>Project: Recipe book</title>
+  <title>Kaylee's Griot Recipe</title>
   <meta charset="utf-8">
   <style>
   h1{
   color:brown
   }
  body{
-background-image:url(https://media.istockphoto.com/id/1370019702/vector/haiti-national-flag-vector-illustration.jpg?s=612x612&w=0&k=20&c=hugn8NuAeR1jQLJHuYSXD4lQj9LwAwLpkxxQlOg_T80=);
+background-image:url(https://a.travel-assets.com/findyours-php/viewfinder/images/res70/205000/205205-Haiti.jpg);
  }  
+  table{
+    background-color: #ff4d4d; /* red background */
+    color: #0033cc; /* blue text for words inside table */
+    border-collapse: collapse;
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  table th, table td{
+    padding: 8px 12px;
+    border: 1px solid rgba(0,0,0,0.1);
+  }
+  .recipe-img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0.5rem 0;
+  }
+  .recipe-img-small{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
   </style>
 </head>
 
@@ -36,7 +62,7 @@ background-image:url(https://media.istockphoto.com/id/1370019702/vector/haiti-na
   <h2>Contents:</h2>
 
   <ol>
-    <li><a href="?">https://www.savorythoughts.com/haitian-griot/</a></li>
+    <li><a target="_blank" rel="noopener" href="https://www.savorythoughts.com/haitian-griot/">Haitian Griot recipe - Savory Thoughts</a></li>
   </ol>
 
   <h2 id="?">Steps</h2>
@@ -52,37 +78,35 @@ background-image:url(https://media.istockphoto.com/id/1370019702/vector/haiti-na
       <tr>
     
         <th>Ingredients</th>
-        <th>steps</th>
+        <th>Steps</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Griot</td>
-      
+        <td>Griot (marinated pork)</td>
+        <td>Cut into cubes, marinate with citrus and seasonings</td>
       </tr>
       <tr>
-     <td>Lemon and Vinegar</td>
+        <td>Pork shoulder</td>
+        <td>Boil until tender, then fry until golden</td>
       </tr>
       <tr>
-     <td>Pork Shoulder</td>
-      </tr>
-      <tr>
-      <td>Garlic</td>
-      </tr>
-      <tr>
-      <td>Jacmel Seasoning</td>
-      </tr>
-      <tr>
-      <td>Habanero & Cayenne</td>
+        <td>Garlic & Scallion</td>
+        <td>Mince and add to marinade for flavor</td>
       </tr>
     </tbody>
   </table>
  
-  <p><strong>Step 1:</strong> Do something.
-  </p>
+  <p><strong>Other Haitian recipes</strong></p>
+  <ul>
+    <li><a target="_blank" rel="noopener" href="https://www.savorythoughts.com/poulet-en-sauce-recipe/">Poulet en Sauce - Savory Thoughts</a></li>
+    <li><a target="_blank" rel="noopener" href="https://www.thespruceeats.com/haitian-recipes-4162396">Collection of Haitian recipes - The Spruce Eats</a></li>
+  </ul>
+<img class="recipe-img" src="https://www.simpleglutenfreekitchen.com/wp-content/uploads/2023/04/Haitian-Chicken-71.jpg" 
+alt="Haitian Chicken">
 
-  <p><em>Source: <a href="?">Some recipes websites</a></em></p>
-
+</img>
+<img class="recipe-img-small" src="https://www.eatingwell.com/thmb/Zgj-v17vDsgX3fEb0DRRk64dfAk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/soup-joumou-1x1a-e6a1964d96cd4d12a2e987eacb4d6077.jpg" alt="Soup Joumou">
 </body>
 
 </html>
